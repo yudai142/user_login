@@ -23,7 +23,7 @@
       </p>
       <p>
         <label for="password_conf">パスワード確認</label>
-        <input type="text" name="password_conf">
+        <input type="password" name="password_conf">
       </p>
       <p>
         <input type="submit" value="新規登録">
