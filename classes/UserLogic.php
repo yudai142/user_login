@@ -45,6 +45,7 @@ class UserLogic {
     // パスワードの照会
     if (password_verify($password, $user['password'])){
       //ログイン成功
+      //セッションハイジャック対策(ID再生成)
       session_regenerate_id(true);
       $_SESSION['login_user'] = $user;
       $result = true;
